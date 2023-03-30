@@ -5,7 +5,7 @@ import { Server } from 'socket.io';
 import './connection.js';
 import userRoutes from './routes/userRoutes.js'
 import User from './models/User.js';
-import Message from './models/Message.js';
+import Message from './models/Message.js'; 
 
 const rooms = ['general', 'tech', 'finance', 'crypto']
 const app = express();
