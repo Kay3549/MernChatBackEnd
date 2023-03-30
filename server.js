@@ -60,7 +60,6 @@ io.on('connection', (socket) => {
 
     socket.join(room)
     let roomMessages = await getLastMessagesFromRoom(room)
-    console.log(roomMessages)
     roomMessages = sortRoomMessagesByDate(roomMessages)
     socket.emit('room-messages', roomMessages)
   })
@@ -104,6 +103,3 @@ server.listen(PORT, () => {
   console.log('server is listening the port', PORT)
 })
 
-
-office3
-home
